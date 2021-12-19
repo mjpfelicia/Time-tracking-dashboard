@@ -46,7 +46,7 @@ main {
 }
 
 .content-geral {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .informacoes-cliente {
@@ -116,6 +116,7 @@ span {
     background: var(--cor-azul-escuro);
     color: var(--cor-branco-);
     border-radius: 1rem;
+    box-sizing: border-box;
 }
 
 .img-section {
@@ -185,4 +186,77 @@ span {
 .content-self-care {
     border-radius: 1rem;
     background: var(--cor-laranja-suave-autocuidado);
+}
+
+@media only screen and (min-width: 600px) {
+    .content-geral {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.5rem;
+        padding-top: 0rem;
+    }
+    .box-geral {
+        height: 100vh;
+        justify-content: center;
+        width: 80%;
+        padding-bottom: 0px;
+    }
+    .box-conteudo {
+        height: 10rem;
+    }
+    .section-cliente {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .content-informaçoes-cliente {
+        height: 100%;
+    }
+    .padding-top {
+        padding: 0px;
+    }
+    .informacoes-cliente {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        padding-left: 2rem;
+        height: 20rem;
+    }
+    .img-informaçoes {
+        width: 100%;
+        text-align: left;
+    }
+    .title-section-cliente {
+        font-size: 2rem;
+    }
+    .relatorio-de-informacoes {
+        flex-direction: column;
+        justify-content: start;
+        padding-left: 2rem;
+        gap: .5rem;
+    }
+    .conteudo-informacao {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .img-previous {
+        position: relative;
+        left: 10rem;
+        bottom: 7.5rem;
+        cursor: pointer;
+    }
+    .title {
+        padding-top: 2rem;
+    }
+    .hours {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+    .previous {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    .previous-hours {
+        padding-top: .5rem;
+    }
 }
