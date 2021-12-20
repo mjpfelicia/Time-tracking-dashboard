@@ -217,7 +217,6 @@ span {
     }
     .informacoes-cliente {
         flex-direction: column-reverse;
-        justify-content: space-evenly;
         padding-left: 2rem;
         height: 20rem;
     }
@@ -227,6 +226,7 @@ span {
     }
     .title-section-cliente {
         font-size: 2rem;
+        padding-bottom: 3rem;
     }
     .relatorio-de-informacoes {
         flex-direction: column;
@@ -238,6 +238,9 @@ span {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+    .box-conteudo:hover {
+        opacity: .9;
     }
     .img-previous {
         position: relative;
