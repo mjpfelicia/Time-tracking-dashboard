@@ -218,7 +218,7 @@ span {
     .informacoes-cliente {
         flex-direction: column-reverse;
         padding-left: 2rem;
-        height: 20rem;
+        height: 22rem;
     }
     .img-informaçoes {
         width: 100%;
@@ -233,7 +233,8 @@ span {
         flex-direction: column;
         justify-content: start;
         padding-left: 2rem;
-        gap: .5rem;
+        gap: 1rem;
+        padding-top: 2rem;
     }
     .conteudo-informacao {
         flex-direction: column;
