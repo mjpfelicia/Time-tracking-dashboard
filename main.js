@@ -31,16 +31,24 @@ function populaDados(nomeDoPeriodo, json) {
 }
 
 function setData(nomeAtividade = '', periodo = '', arquivoJson) {
+    const arry = {
+        "daily": 'Day',
+        "weekly": 'Week',
+        "monthly": 'Month'
+    };
+    console.log({ periodo })
+    console.log({ periodo: arry[periodo] })
 
     const arrumaPalavra = (titulo = "") => {
         return titulo.toLowerCase().replace(' ', '-')
     };
 
+
     const [atividadeEncontrada] = arquivoJson.filter(
         atividade => arrumaPalavra(atividade.title) === arrumaPalavra(nomeAtividade)
     );
     document.querySelector(`#${arrumaPalavra(nomeAtividade)}-current`).textContent = `${atividadeEncontrada.timeframes[periodo].current}hrs`;
-    document.querySelector(`#${arrumaPalavra(nomeAtividade)}-previous`).textContent = `Last Week - ${atividadeEncontrada.timeframes[periodo].previous}hrs`;
+    document.querySelector(`#${arrumaPalavra(nomeAtividade)}-previous`).textContent = `Last ${arry[periodo]} - ${atividadeEncontrada.timeframes[periodo].previous}hrs`;
 }
 
 function tripleToggle(nomeId) {
