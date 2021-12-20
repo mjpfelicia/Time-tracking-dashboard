@@ -203,7 +203,7 @@ span {
         padding-bottom: 0px;
     }
     .box-conteudo {
-        height: 10rem;
+        height: 12rem;
     }
     .section-cliente {
         grid-column: 1/2;
@@ -227,6 +227,7 @@ span {
     .title-section-cliente {
         font-size: 2rem;
         padding-bottom: 3rem;
+        width: 95%;
     }
     .relatorio-de-informacoes {
         flex-direction: column;
